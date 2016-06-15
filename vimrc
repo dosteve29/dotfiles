@@ -1,5 +1,25 @@
-set nocompatible
-filetype plugin indent on
+set nocompatible " required for Vundle
+filetype off " required for Vundle
+
+set rtp+=~/.vim/bundle/Vundle.vim " required for Vundle
+call vundle#begin() " required for Vundle
+
+Plugin 'VundleVim/Vundle.vim' " required for Vundle
+Plugin 'tpope/vim-surround'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
+Plugin 'tomtom/tcomment_vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'matchit.zip'
+Plugin 'scrooloose/syntastic'
+Plugin 'kien/ctrlp.vim'
+" Plugin 'bling/vim-airline'
+Plugin 'pangloss/vim-javascript'
+
+call vundle#end() " required for Vundle
+filetype plugin indent on " required for Vundle
 
 set number " Show line Number
 set mouse=a " Enable mouse
@@ -18,3 +38,9 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set nowrap
+
+" Keybindings
+map <C-n> :NERDTreeToggle<CR>
+
+" Plugin Options
+let g:javascript_enable_domhtmlcss = 1
