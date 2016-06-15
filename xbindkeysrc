@@ -1,0 +1,43 @@
+#####################
+#Increase Volume
+"amixer -c 0 sset Master 5+"
+XF86AudioRaiseVolume
+
+#Decrease Volume
+"amixer -c 0 sset Master 5-"
+XF86AudioLowerVolume
+
+#Volume Toggle
+"amixer set Master toggle"
+XF86AudioMute
+#####################
+
+#####################
+#Decrease Screen Brightness
+"xbacklight -dec 10"
+XF86MonBrightnessDown
+
+#Increase Screen Brightness
+"xbacklight -inc 10"
+XF86MonBrightnessUp
+#####################
+
+#####################
+#Previous
+"playerctl previous"
+XF86AudioPrev
+
+#Play-Pause
+"playerctl play-pause"
+XF86AudioPlay
+
+#Next
+"playerctl next"
+XF86AudioNext
+#####################
+
+#####################
+#i3lock
+"i3lock"
+XF86ScreenSaver
+#####################
