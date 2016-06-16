@@ -17,6 +17,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'kien/ctrlp.vim'
 " Plugin 'bling/vim-airline'
 Plugin 'pangloss/vim-javascript'
+Plugin 'mattn/emmet-vim'
 
 call vundle#end() " required for Vundle
 filetype plugin indent on " required for Vundle
